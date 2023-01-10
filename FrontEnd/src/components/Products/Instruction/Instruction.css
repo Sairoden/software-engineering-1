@@ -1,0 +1,41 @@
+.instruction_container {
+  /* text-align: center; */
+}
+
+.instruction_container h1 {
+  margin-top: 2rem;
+  font-size: 46px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.instruction_container h3 {
+  font-size: 28px;
+  max-width: 70rem;
+  /* word-wrap: break-word; */
+  margin-left: 25rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.instruction_container span {
+  font-size: 18px;
+  margin-left: 25rem;
+}
+
+.instruction_container .descriptions {
+  margin-top: 2rem;
+  font-size: 18px;
+  margin-left: 25rem;
+  /* text-align: center; */
+}
+
+.instruction_container img {
+  margin-top: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-style: dashed;
+  border-width: 2px;
+}

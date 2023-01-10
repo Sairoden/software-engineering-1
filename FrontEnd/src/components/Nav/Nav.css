@@ -1,0 +1,229 @@
+.nav_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+.nav_container .nav_drawer {
+  visibility: hidden;
+}
+.ant-input-group-wrapper {
+  padding-left: 10%;
+}
+.ant-drawer-body {
+  margin-top: 13%;
+}
+.ant-menu {
+  margin-top: 12%;
+}
+.ant-menu-inline {
+  border-right: none;
+}
+.ant-menu-inline .ant-menu-submenu {
+  padding-bottom: 12px;
+}
+.ant-menu-submenu-title:hover {
+  color: #515151;
+}
+.ant-menu-item:hover,
+.ant-menu-item-active,
+.ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+.ant-menu-submenu-active,
+.ant-menu-submenu-title:hover {
+  color: #515151;
+}
+.nav_container .logo {
+  font-family: "Fredoka One", cursive;
+  font-size: 3.4rem;
+  color: #515151;
+  margin: 1% 1% 1% 3%;
+}
+.nav_container nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.nav_container .nav_links {
+  margin-left: 5%;
+}
+.nav_container .nav_link {
+  margin: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  color: #515151;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  padding: 8px;
+  white-space: nowrap;
+  font-size: 17px;
+}
+.nav_container .nav_link .arrow {
+  font-size: 0.8rem;
+  padding-left: 3%;
+}
+.nav_container .nav_icons {
+  font-size: 1.4rem;
+  color: #515151;
+  width: 10%;
+  margin-right: 5%;
+  display: flex;
+}
+.nav_container .search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 5%;
+  font-size: 1.4rem;
+  margin-left: 1%;
+  color: #515151;
+}
+.nav_container .search_icon {
+  margin: 1%;
+}
+.nav_container .nav_icon {
+  margin-bottom: 1%;
+  margin-left: 5%;
+  white-space: nowrap;
+  margin-right: 5%;
+}
+.nav_container .search,
+.nav_container .nav_icon span {
+  font-size: 1.5rem;
+}
+.nav_container .nav_icon .stay {
+  position: relative;
+}
+
+.cart {
+  /* CART CSS */
+}
+
+.nav_container .nav_icon .heart {
+  margin: 10rem !important;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1471px) {
+  .nav_container .search {
+    padding-left: 143px;
+  }
+}
+@media only screen and (max-width: 1330px) {
+  .nav_container .search {
+    padding-left: 203px;
+  }
+}
+@media only screen and (max-width: 1222px) {
+  .nav_container .search {
+    padding-left: 210px;
+  }
+}
+@media only screen and (max-width: 1210px) {
+  .nav_container .search {
+    padding-left: 190px;
+  }
+  .nav_container .ftuHNr {
+    width: 150px;
+  }
+  .nav_container .nav_icons {
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .nav_container .search {
+    padding-left: 180px;
+  }
+  .nav_container .ftuHNr {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 1130px) {
+  .nav_container .nav_drawer {
+    visibility: inherit;
+    width: 10%;
+    font-size: 1.4rem;
+  }
+  .nav_container .logo {
+    font-size: 3.1rem;
+    padding-left: 210px;
+  }
+  .nav_container .nav_links {
+    width: 0;
+  }
+  .nav_container .nav_link {
+    display: none;
+  }
+  .nav_container .search {
+    display: none;
+    width: 0;
+  }
+  .nav_container .ftuHNr {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 1059px) {
+  .nav_container .logo {
+    padding-left: 200px;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .nav_container .logo {
+    padding-left: 180px;
+  }
+}
+@media only screen and (max-width: 913px) {
+  .nav_container .logo {
+    padding-left: 160px;
+  }
+}
+@media only screen and (max-width: 875px) {
+  .nav_container .logo {
+    padding-left: 150px;
+  }
+}
+@media only screen and (max-width: 790px) {
+  .nav_container .logo {
+    padding-left: 140px;
+  }
+}
+@media only screen and (max-width: 745px) {
+  .nav_container .logo {
+    padding-left: 130px;
+  }
+}
+@media only screen and (max-width: 670px) {
+  .nav_container .logo {
+    padding-left: 110px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .nav_container .logo {
+    padding-left: 100px;
+  }
+}
+@media only screen and (max-width: 588px) {
+  .nav_container .logo {
+    padding-left: 100px;
+  }
+  .nav_container .nav_icons {
+    margin-right: 50px;
+  }
+}
+@media only screen and (max-width: 565px) {
+  .nav_container .logo {
+    padding-left: 90px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .nav_container .logo {
+    padding-left: 80px;
+  }
+}
+@media only screen and (max-width: 0px) {
+}

@@ -1,0 +1,53 @@
+.login,
+.register {
+  padding: 50px 0;
+  margin: auto;
+  width: 50vw;
+  height: calc(100vh - 111.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "PT Sans", sans-serif;
+}
+.login .heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.9rem;
+}
+.login .sub-heading,
+.login .label {
+  font-size: 1rem;
+}
+
+.login form {
+  width: 50vh;
+}
+.bundle {
+  margin-bottom: 5px;
+}
+.login input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid #515151;
+}
+.submit-btn {
+  margin: 10px 0;
+  width: 100%;
+  height: 40px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+.submit-btn:hover {
+  color: white;
+  background-color: #40a9ff;
+  border: none;
+}
+.login a {
+  color: #40a9ff;
+}
+.login a:hover {
+  color: black;
+}

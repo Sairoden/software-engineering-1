@@ -1,0 +1,401 @@
+.hero_container {
+  background-color: #f9f9f9;
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade-in 0.4s ease 1.5s forwards;
+  opacity: 0;
+}
+.hero_container .hero_container_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fade-in 1.6s ease 1.5s forwards;
+}
+.hero_container .hero_container_title p {
+  font-size: 1.3rem;
+  line-height: 0.9;
+  animation: fade-in 5s ease 1.5s forwards;
+  white-space: nowrap;
+}
+.hero_container .hero_container_title p:first-child {
+  font-size: 3.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+.hero_container .hero_container_title p:nth-child(2) {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.hero_container .hero_container_title .btn {
+  color: black;
+  border: 2px solid black;
+  padding: 6px 12px;
+  min-width: 90px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  animation: fade-in 7s ease 1.5s forwards;
+  transition: padding-right 501.379ms ease 0ms, background 0s ease;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero_container .hero_container_title .btn:hover {
+  padding-right: 51px;
+  background: url("/src/assets/Home/button-arrow.png") no-repeat 150% 35%;
+  background-size: 29px;
+  background-position: 90% 49%;
+  user-select: none;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fade-in 9s ease 1.5s forwards;
+  opacity: 0;
+  overflow-x: hidden;
+}
+.main_container .merch_container {
+  display: flex;
+  flex-direction: column;
+  margin: 7%;
+}
+.main_container .merch_container p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+  text-align: center;
+}
+.main_container .merch_container .merch_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main_container .merch_container .merch_grid .grid_item {
+  /*parent */
+  width: 45%;
+  margin: 20px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.main_container .merch_container .second-row .grid_item {
+  width: 29%;
+}
+.main_container .merch_container .merch_grid .grid_item:hover img,
+.main_container .merch_container .merch_grid .grid_item:focus img {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.main_container .merch_container .merch_grid .grid_item:hover img:before,
+.main_container .merch_container .merch_grid .grid_item:focus img:before {
+  display: block;
+}
+.main_container .merch_container .merch_grid .grid_item img {
+  /*child */
+  background-repeat: no-repeat;
+  background-position: center !important;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 100%;
+  min-height: 300px;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.main_container .merch_container .merch_grid .grid_item img::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.main_container .merch_container .merch_grid .overlay::before {
+  background-color: #212121;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  border-radius: 7px;
+}
+.main_container .merch_container .merch_grid .overlay::after {
+  background-color: #212121;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.main_container
+  .merch_container
+  .merch_grid
+  .grid_item:hover
+  .collection_grid-title,
+.main_container
+  .merch_container
+  .merch_grid
+  .grid_item:focus
+  .collection_grid-title {
+  display: block;
+}
+.main_container .merch_container .merch_grid .grid_item .collection_grid-title {
+  font-size: 35px;
+  color: #fff !important;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  z-index: 1;
+}
+.main_container .merch_container .break {
+  margin: 4%;
+}
+
+/* .subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe p {
+  font-size: 1.3rem;
+  line-height: 0.9;
+  animation: fade-in 5s ease 1.5s forwards;
+}
+.subscribe p:first-child {
+  font-size: 1.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+.subscribe p:nth-child(2) {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.9rem;
+} */
+.subscribe .ant-form-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.subscribe .subscribeform {
+  width: 70%;
+}
+.subscribe .subscribed {
+  width: 50%;
+  border: 1px solid #0295e5;
+  text-align: center;
+  border-radius: 3px;
+  color: #0295e5;
+  padding: 6px 10px;
+}
+
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
+
+slider {
+  margin: 0;
+}
+div#slider {
+  overflow: hidden;
+}
+div#slider figure img {
+  background-size: 100%;
+  float: left;
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite;
+}
+
+.l-container {
+  width: 100%;
+  height: 50%;
+
+  @media screen and (max-width: 760px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.b-game-card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+
+  padding-bottom: 150%;
+  perspective: 1000px;
+}
+
+.b-game-card__cover {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-size: cover;
+  perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
+  transform-origin: top center;
+  will-change: transform;
+  transform: skewX(0.001deg);
+  transition: transform 0.35s ease-in-out;
+}
+
+.b-game-card__cover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: linear-gradient(
+    226deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.4) 35%,
+    rgba(255, 255, 255, 0.2) 42%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  transform: translateY(-20%);
+  will-change: transform;
+  transition: transform 0.65s cubic-bezier(0.18, 0.9, 0.58, 1);
+}
+
+.b-game-card:hover .b-game-card__cover {
+  transform: rotateX(7deg) translateY(-6px);
+}
+
+.b-game-card:hover .b-game-card__cover::after {
+  transform: translateY(0%);
+}
+
+.b-game-card::before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background: rgba(#000000, 0.5);
+  box-shadow: 0 6px 12px 12px rgba(#000000, 0.4);
+  will-change: opacity;
+  transform-origin: top center;
+  transform: skewX(0.001deg);
+  transition: transform 0.35s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.b-game-card:hover::before {
+  opacity: 0.6;
+  transform: rotateX(7deg) translateY(-6px) scale(1.05);
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1110px) {
+  .hero_container .hero_container_title {
+    width: 50%;
+  }
+  .hero_container img {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 1095px) {
+  .hero_container .hero_container_title p:first-child {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 958px) {
+  .hero_container .hero_container_title {
+    padding-left: 10%;
+  }
+  .hero_container .hero_container_title p {
+    font-size: 1rem;
+    line-height: 0.8;
+  }
+  .hero_container .hero_container_title p:first-child {
+    font-size: 2.5rem;
+  }
+}
+/* @media only screen and (max-width: 0px) {
+ 
+} */
