@@ -185,17 +185,17 @@ function App() {
         />
 
         {/* ABOUT US */}
-        <Route path="/help/about-us" element={<AboutUs />} />
-        <Route path="/help/contact-us" element={<ContactUs />} />
+        {/* <Route path="/help/about-us" element={<AboutUs />} /> */}
+        {/* <Route path="/help/contact-us" element={<ContactUs />} /> */}
 
         {/* FAVORITE */}
         <Route path="/favorite" element={<Favorite />} />
 
         {/* CHECKOUT */}
-        <Route path="/checkout" element={<Checkout />} />
+        {/* <Route path="/checkout" element={<Checkout />} /> */}
 
         {/* PRODUCTS */}
-        <Route
+        {/* <Route
           path="/collections/anime-airpod-1-2-pro-cases/products/:id"
           element={<AirpodCaseProductPage />}
         />
@@ -250,9 +250,9 @@ function App() {
         <Route
           path="/collections/japanese-waifu-shirts-and-hoodies/products/:id"
           element={<WaifuProductPage />}
-        />
+        /> */}
         {/* Instruction */}
-        <Route path="/instruction" element={<Instruction />} />
+        {/* <Route path="/instruction" element={<Instruction />} /> */}
       </Route>
       <Route path="/" element={<Footer />} />
     </Routes>
